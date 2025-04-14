@@ -217,6 +217,64 @@ FOOTER
     color: #DD5735;
 }
 
+
+
+/* *****************************************************************
+VERSION TABLETTE
+***************************************************************** */
+
+@media screen and (max-width: 990px) {
+    
+    body{
+        width: 100%;
+    }
+    
+    .flex-container{
+        display: block;
+    } 
+    
+    .tablette-container{
+        display: flex;
+    }
+    
+    .grid-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        gap: 1em
+    }
+    
+    header .logo-bloc{
+        text-align: center;
+    }
+    
+    .header-content{
+        padding-bottom: 0;
+        padding-top: 2em;
+    }
+    
+    .card{
+        margin-bottom: 2em;
+    }
+    
+    .img-container{
+        
+        place-items: center;
+        justify-content: space-evenly;
+    }
+   
+}
+
+/* *****************************************************************
+VERSION MOBILE
+***************************************************************** */
+
+@media screen and (max-width: 680px){
+    
+}
+
+
+
 /*
 Intégration responsive en retrofitting / desktop first
 
