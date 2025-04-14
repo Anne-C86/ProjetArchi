@@ -1,0 +1,256 @@
+/* *****************************************************************
+TOOLS
+***************************************************************** */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px => (10 / 16) * 100 = 62.5 */
+    
+}
+
+body {
+    font-size: 1.6rem;/* On remet la taille par défaut de 16px */
+    
+}
+
+
+/* *****************************************************************
+GENERALITES
+***************************************************************** */
+
+li{
+    list-style: none;
+}
+
+h1, h2, h3, header, nav, .footer-site{
+    font-family: "Fjalla One";
+}
+
+h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: #CB8606;
+    padding: 0.5em;
+    display: inline-block;
+    margin-bottom: 0.2em;
+    margin-top: 5em;
+    
+}
+
+h2{
+    font-size: 2.5rem;
+    color: #00748D;
+    text-align: center;
+    margin: 3em;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+body{
+    background-color: #EDEDED;
+    margin: 0;
+     font-family: "Nunito"; 
+}
+
+main{
+    color: #414141;
+    font-family: "Nunito";
+}
+
+section{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+span{
+    color: #CB8606;
+}
+
+.logo-bloc{
+    align-items: baseline;
+}
+
+.logo-bloc p{
+    margin-bottom: 0;
+}
+
+.bandeau{
+    background-color: #00748D;
+    color: white;
+    background-image: url('../ressources/images/path.png');
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: auto;
+    font-size: 2rem;  
+}
+
+/* *****************************************************************
+LAYOUT
+***************************************************************** */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-container{
+    display: flex;
+}
+
+
+
+/* *****************************************************************
+HEADER
+***************************************************************** */
+
+.header-content{
+    justify-content: space-around;
+    align-items: baseline;
+    padding-bottom: 0.5em;
+    
+}
+
+.menu{
+    justify-content: space-around;
+    margin-bottom: 0;
+    
+}
+
+.menu>li{
+    padding: 0.5em 1em;
+}
+
+.menu>li:hover{
+    color: #00748D;
+    background-color: white;
+}
+
+/* *****************************************************************
+MAIN
+***************************************************************** */
+
+.banneer{
+     background-image: url('../ressources/images/bg-header.jpg');
+     background-size: cover;
+     background-position: center;
+     
+     text-align: center;
+     height: 25em;
+     
+}
+
+.banneer p{
+    color: #00748D;
+    background-color: white;
+    display: inline-block;
+    font-size: 1.8rem;
+    padding: 0.3em 1em;
+}
+
+.card{
+    text-align: center;
+    margin: 1em;
+    color: #414141;
+}
+
+article i{
+    background-color: #CB8606;
+    color: white;
+    padding: 1em 0.5em;
+}
+
+.text-card{
+    text-align: left;
+}
+
+.more-button{
+    background-color: #00748D;
+    color: white;
+    padding: 0.5em 3em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.img-container{
+    justify-content: space-around;
+}
+
+.img-container img{
+    border: 0.2em solid #00748D;
+   
+}
+
+/* *****************************************************************
+FOOTER
+***************************************************************** */
+
+.footer-site{
+      
+    padding: 1em 0 1.5em 0;
+}
+
+.brands-container{
+    justify-content: flex-end;
+    align-items: center ;
+}
+
+.brands-container i{
+    margin: 0 0.5em;
+    
+}
+
+
+.main-footer {
+    padding: 2em;
+    text-align: center;
+    color: #FFF;
+    background-color: #444;
+}
+
+.main-footer a{
+    text-decoration: none;
+    color: #DD5735;
+}
+
+/*
+Intégration responsive en retrofitting / desktop first
+
+La page d'accueil et la page des réalisations sont à réaliser en priorité.
+La page "Actualité" est optionnelle, à faire une fois que les 2 autres pages sont finalisées.
+
+Le contenu a un maximum de 1200px de large mais les fonds de couleur de l'entête et du pied de pge font toute la largeur de la fenêtre du navigateur quelque soit sa taille.
+
+Les points de rupture :
+- 990px pour tablette
+- 680px pour mobile
+- petits mobiles 630px
+
+COULEURS
+- fond turquoise : #00748D
+- jaune orangé : #CB8606
+- fond gris clair: #f9f9f9
+- texte : #414141
+
+POLICES
+- Par défaut : Nunito (Google fonts)
+- Titres et nav : Fjalla One (Google fonts)
+
+TAILLE DES POLICES (à adapter en valeurs relatives)
+
+- par défaut : 18px
+- titre du site : 20px
+- menu : 20px
+- titre de la page d'accueil : 30px et 20px
+- titre des pages intérieures : 30px
+- sous-titres : 25px
+- titres articles : 20px
+- textes colonne de droite : 16px
+- auteurs : 14px
+
+L'ensemble des pictos sont des Font Awesome
+*/
